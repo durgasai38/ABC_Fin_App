@@ -30,4 +30,4 @@ CREATE TABLE "loan_application" (
 
 conn.commit()
 conn.close()
-print("loan_data.db created successfully")
+print("loandataDb created successfully")
