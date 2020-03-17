@@ -52,9 +52,10 @@ result = cursor.fetchall()
 delete="DELETE FROM `loan_application` WHERE loanid = (SELECT MAX(loanid) FROM `loan_application`)"
 c.execute(delete)
 conn.commit()
+print(type(conn))
 conn.close()
 if conn:
   conn.close()
   print(type(conn))
-  break
+  
 driver.close()
