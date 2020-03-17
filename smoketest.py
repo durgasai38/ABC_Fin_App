@@ -14,7 +14,7 @@ from selenium.webdriver.common.keys import Keys
 import requests
 
 # initialize driver with browser
-driver = webdriver.Chrome('C:\Users\SAI\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.8\chromedriver.exe')
+driver = webdriver.Chrome()
 # test deployment url
 url = "http://localhost:5000/"
 driver.get(url)
