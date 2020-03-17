@@ -29,5 +29,5 @@ CREATE TABLE "loan_application" (
 )
 
 conn.commit()
-
-print("TestDB created successfully")
+conn.close()
+print("loan_data.db created successfully")
