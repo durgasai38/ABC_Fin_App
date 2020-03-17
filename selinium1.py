@@ -53,4 +53,7 @@ delete="DELETE FROM `loan_application` WHERE loanid = (SELECT MAX(loanid) FROM `
 c.execute(delete)
 conn.commit()
 conn.close()
+if conn:
+  conn.close()
+  break
 driver.close()
