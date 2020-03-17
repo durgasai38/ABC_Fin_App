@@ -55,5 +55,6 @@ conn.commit()
 conn.close()
 if conn:
   conn.close()
+  print(type(conn))
   break
 driver.close()
