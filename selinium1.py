@@ -53,6 +53,8 @@ delete="DELETE FROM `loan_application` WHERE loanid = (SELECT MAX(loanid) FROM `
 c.execute(delete)
 conn.commit()
 print(type(conn))
+table="DROP TABLE loan_application"
+c.execute(table)
 conn.close()
 if conn:
   conn.close()
