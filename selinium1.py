@@ -15,7 +15,7 @@ c = conn.cursor()
 conn.commit()
 
 
-driver = webdriver.Chrome(r'C:\Python38\chromedriver.exe')
+driver = webdriver.Chrome(r'C:\Users\SAI\Downloads\chromedriver_win32')
 #browser = webdriver.Firefox()
 driver.get("http://localhost:5000/application.html")
 name=driver.find_element_by_name("name")
